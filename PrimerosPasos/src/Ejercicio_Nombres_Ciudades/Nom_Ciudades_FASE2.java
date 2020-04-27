@@ -1,6 +1,40 @@
 package Ejercicio_Nombres_Ciudades;
 
 import java.util.*;
+import java.util.Arrays;
+
+public class auxiliar {
+
+	public static void main(String[] args) 
+	{
+		String ciudad1="Barcelona", ciudad2="Madrid", ciudad3="Valencia", ciudad4="Málaga", ciudad5="Cádiz", ciudad6="Santander";
+		String [] arrayCiutats = new String[6];
+		
+		
+		arrayCiutats[0]=ciudad1;
+		arrayCiutats[1]=ciudad2;
+		arrayCiutats[2]=ciudad3;
+		arrayCiutats[3]=ciudad4;
+		arrayCiutats[4]=ciudad5;
+		arrayCiutats[5]=ciudad6;
+	
+		
+		Arrays.sort(arrayCiutats);
+		
+		for(int i=0; i<6;i++)
+		{
+			System.out.println(arrayCiutats[i]);
+		}
+		
+	}
+
+}
+
+
+/*
+ * package Ejercicio_Nombres_Ciudades;
+
+import java.util.*;
 import java.lang.*;
 public class Nom_Ciudades_FASE2 {
 
@@ -9,7 +43,7 @@ public class Nom_Ciudades_FASE2 {
 		String ciudad1="Barcelona", ciudad2="Madrid", ciudad3="Valencia";
 		String ciudades;
 		int i=0, j=0,o=0, p=0, q=0, m=0, cantfila=1;
-		char[] ciudadesCha=new char[45];
+		char[] ciuCha=new char[45];
 		char[] auxs=new char[45];
 		char[][] ciudadesCham = new char[4][45];
 		
@@ -17,12 +51,12 @@ public class Nom_Ciudades_FASE2 {
 		ciudades=ciudad1+' '+ciudad2+' '+ciudad3;
 		//System.out.println(ciudades);
 		
-		ciudadesCha=ciudades.toCharArray();
+		ciuCha=ciudades.toCharArray();
 		
-		for(int a=0; a<ciudadesCha.length;a++)
+		for(int a=0; a<ciuCha.length;a++)
 		{
-			//System.out.print (ciudadesCha[a]);
-			if(ciudadesCha[a]!=' ')
+			//System.out.print (ciuCha[a]);
+			if(ciuCha[a]!=' ')
 			{
 				//System.out.print(ciudadesCha[k]);
 				ciudadesCham[i][j]=ciudadesCha[a];
@@ -74,5 +108,7 @@ public class Nom_Ciudades_FASE2 {
 	}
 }
 }
+
+ */
 		
 		
